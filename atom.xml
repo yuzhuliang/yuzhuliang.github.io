@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-12T13:13:59.621Z</updated>
+  <updated>2022-05-12T13:21:20.629Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,20 @@
     <link href="http://example.com/2022/05/12/jing-shi-lu/"/>
     <id>http://example.com/2022/05/12/jing-shi-lu/</id>
     <published>2022-05-12T13:14:18.870Z</published>
-    <updated>2022-05-12T13:13:59.621Z</updated>
+    <updated>2022-05-12T13:21:20.629Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;警示录&quot;&gt;&lt;a href=&quot;#警示录&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;title:警示录&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不需要焦虑，更不要虚度时间。&lt;/li&gt;
+&lt;li&gt;年轻的程序员很难沉下去聚焦，年长的程序员很难跳出来扩展。无论是技术邻域还是业务邻域，都需要先聚集栽扩展。&lt;/li&gt;
+&lt;li&gt;放弃幻想，准备战斗！&lt;/li&gt;
+&lt;/ol&gt;
+</summary>
         
       
     
