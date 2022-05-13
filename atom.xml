@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-12T13:53:11.276Z</updated>
+  <updated>2022-05-13T02:21:56.798Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2022/5/13</title>
+    <link href="http://example.com/2022/05/13/2022-05-13/"/>
+    <id>http://example.com/2022/05/13/2022-05-13/</id>
+    <published>2022-05-13T02:08:42.809Z</published>
+    <updated>2022-05-13T02:21:56.798Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;学而不思则罔，思而不学则殆。&lt;/strong&gt;一味的行动而不思考是不可取的，一味的思考而不行动也是不可取的。我们需要边行边思，在行动中反思，在思考中前行。如果只行或思，结束之后必然是长久的迷惘。边行边思，路在脚下。纵有真理万千，可若不践行</summary>
+        
+      
+    
+    
+    
+    <category term="沉思" scheme="http://example.com/categories/%E6%B2%89%E6%80%9D/"/>
+    
+    
+    <category term="反思" scheme="http://example.com/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+    <category term="知行" scheme="http://example.com/tags/%E7%9F%A5%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>警示录</title>
     <link href="http://example.com/2022/05/12/jing-shi-lu/"/>
     <id>http://example.com/2022/05/12/jing-shi-lu/</id>
     <published>2022-05-12T13:06:00.000Z</published>
-    <updated>2022-05-12T13:53:11.276Z</updated>
+    <updated>2022-05-13T02:24:42.689Z</updated>
     
     
       
@@ -29,24 +56,20 @@
         
         
     <summary type="html">&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;不需要焦虑，更不要虚度时间。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;不需要焦虑，更不要虚度时间。&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;年轻的程序员很难沉下去聚焦，年长的程序员很难跳出来扩展。无论是技术邻域还是业务邻域，都需要先聚集栽扩展。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;年轻的程序员很难沉下去聚焦，年长的程序员很难跳出来扩展。无论是技术邻域还是业务邻域，都需要先聚集栽扩展。&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;放弃幻想，准备战斗！&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</summary>
+&lt;li&gt;&lt;p&gt;放弃幻想，准备战斗！&lt;br&gt;&lt;/p&gt;</summary>
         
       
     
     
     
-    <category term="心" scheme="http://example.com/categories/%E5%BF%83/"/>
+    <category term="简摘" scheme="http://example.com/categories/%E7%AE%80%E6%91%98/"/>
     
     
-    <category term="律己" scheme="http://example.com/tags/%E5%BE%8B%E5%B7%B1/"/>
-    
-    <category term="守心" scheme="http://example.com/tags/%E5%AE%88%E5%BF%83/"/>
+    <category term="沉思，指导" scheme="http://example.com/tags/%E6%B2%89%E6%80%9D%EF%BC%8C%E6%8C%87%E5%AF%BC/"/>
     
   </entry>
   
