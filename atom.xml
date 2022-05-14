@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-13T02:21:56.798Z</updated>
+  <updated>2022-05-14T14:39:56.482Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2022/5/14</title>
+    <link href="http://example.com/2022/05/14/2022-05-14/"/>
+    <id>http://example.com/2022/05/14/2022-05-14/</id>
+    <published>2022-05-14T14:30:21.283Z</published>
+    <updated>2022-05-14T14:39:56.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;习惯就像一根把人栓在一定环境里的弹力绳。当你想要走出去时，弹力绳就开始产生反向拉力，将你拉回旧环境中。你走的越远，拉力越大，走的越艰难。你走的越来越慢，每天仅仅前行一小步都需要克服巨大的阻力。就这样，你若一步放松不用力，巨大的反向拉力就会将你直接拽回去，重重的砸在地上。你若</summary>
+        
+      
+    
+    
+    
+    <category term="沉思" scheme="http://example.com/categories/%E6%B2%89%E6%80%9D/"/>
+    
+    
+    <category term="知行" scheme="http://example.com/tags/%E7%9F%A5%E8%A1%8C/"/>
+    
+    <category term="阻力" scheme="http://example.com/tags/%E9%98%BB%E5%8A%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2022/5/13</title>
     <link href="http://example.com/2022/05/13/2022-05-13/"/>
     <id>http://example.com/2022/05/13/2022-05-13/</id>
     <published>2022-05-13T02:08:42.809Z</published>
-    <updated>2022-05-13T02:21:56.798Z</updated>
+    <updated>2022-05-14T14:38:16.033Z</updated>
     
     
       
@@ -44,11 +71,11 @@
   </entry>
   
   <entry>
-    <title>警示录</title>
+    <title>革心录</title>
     <link href="http://example.com/2022/05/12/jing-shi-lu/"/>
     <id>http://example.com/2022/05/12/jing-shi-lu/</id>
     <published>2022-05-12T13:06:00.000Z</published>
-    <updated>2022-05-13T02:24:42.689Z</updated>
+    <updated>2022-05-14T14:39:42.748Z</updated>
     
     
       
@@ -58,7 +85,7 @@
     <summary type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;不需要焦虑，更不要虚度时间。&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;年轻的程序员很难沉下去聚焦，年长的程序员很难跳出来扩展。无论是技术邻域还是业务邻域，都需要先聚集栽扩展。&lt;br&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;年轻的程序员很难沉下去聚焦，年长的程序员很难跳出来扩展。无论是技术邻域还是业务邻域，都需要先聚集再扩展。&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;放弃幻想，准备战斗！&lt;br&gt;&lt;/p&gt;</summary>
         
