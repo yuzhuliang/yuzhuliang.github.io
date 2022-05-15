@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-14T14:39:56.482Z</updated>
+  <updated>2022-05-15T14:52:56.461Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022/5/15</title>
+    <link href="http://example.com/2022/05/15/2022-05-15/"/>
+    <id>http://example.com/2022/05/15/2022-05-15/</id>
+    <published>2022-05-15T14:52:56.461Z</published>
+    <updated>2022-05-15T14:52:56.461Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我们在指定时间内需要完成很多事时有以下情况&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;1.可以完美的完成一部分事，但是要以部分事完全无法顾及为代价。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;2.现有的能力并不能完美的完成任何一件事，但是可以以及格的标准完成一部分事。&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;3.部分事可以完美完成</summary>
+        
+      
+    
+    
+    
+    <category term="沉思" scheme="http://example.com/categories/%E6%B2%89%E6%80%9D/"/>
+    
+    
+    <category term="反思" scheme="http://example.com/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+    <category term="知行" scheme="http://example.com/tags/%E7%9F%A5%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>2022/5/14</title>
@@ -72,8 +102,8 @@
   
   <entry>
     <title>革心录</title>
-    <link href="http://example.com/2022/05/12/jing-shi-lu/"/>
-    <id>http://example.com/2022/05/12/jing-shi-lu/</id>
+    <link href="http://example.com/2022/05/12/ge-xin-lu/"/>
+    <id>http://example.com/2022/05/12/ge-xin-lu/</id>
     <published>2022-05-12T13:06:00.000Z</published>
     <updated>2022-05-14T14:39:42.748Z</updated>
     
