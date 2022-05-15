@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>2022/5/15 | Hexo</title>
+  <title>MySQL数据类型-字符串类型 | Hexo</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -656,14 +656,14 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/11.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/7.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        2022/5/15
+        MySQL数据类型-字符串类型
       </span>
     </div>
     
@@ -678,8 +678,8 @@
         <span class="post-detail-header_categories">
           <i class="iconfont iconbookmark1"></i> 分类：
           
-            <a href="/categories/%E6%B2%89%E6%80%9D/" class="post-detail-header_category">
-              沉思
+            <a href="/categories/MySQL/" class="post-detail-header_category">
+              MySQL
             </a>
           
         </span>
@@ -703,29 +703,40 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p>我们在指定时间内需要完成很多事时有以下情况<br></p>
-<p>1.可以完美的完成一部分事，但是要以部分事完全无法顾及为代价。<br></p>
-<p>2.现有的能力并不能完美的完成任何一件事，但是可以以及格的标准完成一部分事。<br></p>
-<p>3.部分事可以完美完成，部分事可以稍微涉及。<br></p>
-<p>针对这三种情况，并不能一概而论。而要具体事件具体分析。<br></p>
-<p>1.如果在考试时，我们要做的并不是完美的做出某几道题，也不是将所有的题都做一遍。而是在指定的时间内以尽可能的多得分为原则进行做题。<br></p>
-<p>2.如果有几件很重要的事都着急完成，那我们就需要将事情按照轻重缓急排序。<br></p>
-<p>3.有些事还需要结合我们的需求来决定。比如我们学习一个东西，如果我们只需要将其学到8成左右就可以达到目的，那我们就没必要浪费多余的时间去学习剩余的两层。如果一个知识是我们学科邻域的基础，越精越好，那我们就有必要花时间去抽丝剥茧，将其完全掌握。</p>
-<br>
-
-<p><strong>一个东西时间上的安排要看你的需求是什么，你想干什么</strong><br></p>
+        <h4 id="以下类型都已字符串的形式存储，故全部归结为字符串类型"><a href="#以下类型都已字符串的形式存储，故全部归结为字符串类型" class="headerlink" title="以下类型都已字符串的形式存储，故全部归结为字符串类型"></a>以下类型都已字符串的形式存储，故全部归结为字符串类型</h4><h2 id="1-CHAR-M"><a href="#1-CHAR-M" class="headerlink" title="1.CHAR(M)"></a>1.CHAR(M)</h2><ul>
+<li>固定长度字符串，M指定是多少就是多少。</li>
+<li>在底层存储时占用M个字符。如果字符串长度小于M会用空格填充，大于M会报错。</li>
+<li>在取出数据时会将填充的空格去掉。所以以<strong>CHAR(5)<strong>存储的</strong>‘ab  ’</strong>在取出后会成为<strong>‘ab’</strong>。在不指定M时，M默认为1。</li>
+</ul>
+<h2 id="2-VARCHAR-M"><a href="#2-VARCHAR-M" class="headerlink" title="2.VARCHAR(M)"></a>2.VARCHAR(M)</h2><ul>
+<li>可变长度字符串，可以存储长度小于等于M的字符。</li>
+<li>在底层存储时占用<strong>（字符串的实际长度+1）</strong>个字符，因为会用一个字符来保存字符串的长度。</li>
+<li>在定义时必须指定M的大小，否则会报错，且最大字符串长度为21845。</li>
+</ul>
+<h2 id="3-如何选择CHAR-M-和VARCHAR-M"><a href="#3-如何选择CHAR-M-和VARCHAR-M" class="headerlink" title="3.如何选择CHAR(M)和VARCHAR(M)"></a>3.如何选择CHAR(M)和VARCHAR(M)</h2><ul>
+<li>CHAR(M)因为固定了长度，如果存储的字符串长短不一，长度差距较大，那么存储时会浪费大量的空间存储空格。</li>
+<li>VARCHAR(M)会用额外的一个空间来储存字符串的长度，如果字符串都是固定长度的字符，那么使用VARCHAR（M）就会浪费一个字符的空间。</li>
+<li>还要考虑采用的是何种引擎，不同的引擎底层的存储结构不同。</li>
+</ul>
+<h2 id="4-TEXT文本类型"><a href="#4-TEXT文本类型" class="headerlink" title="4.TEXT文本类型"></a>4.TEXT文本类型</h2><ul>
+<li>主要用于存储比较大的文本段，搜索速度较慢。</li>
+<li>有四种：TINYTEXT、TEXT、MEDIAMTEXT、BIGTEXT，四种类型存储范围不同。</li>
+<li>频繁更改的表不建议使用TEXT文本类型。TEXT因其占用空间较大，频繁删除会造成空洞，建议单独使用一张表来保存TEXT文本。</li>
+</ul>
+<h2 id="5-ENUM类型"><a href="#5-ENUM类型" class="headerlink" title="5.ENUM类型"></a>5.ENUM类型</h2><ul>
+<li>设置为ENUM类型的字段的值只能为ENUM类型中的一个。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>建立表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> test_enum (</span><br><span class="line">	season  ENUM(<span class="string">&#x27;春&#x27;</span>,<span class="string">&#x27;夏&#x27;</span>,<span class="string">&#x27;秋&#x27;</span>,<span class="string">&#x27;冬&#x27;</span>,<span class="string">&#x27;unknown&#x27;</span>)</span><br><span class="line">);</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>插入数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> test_enum (season) <span class="keyword">values</span> (<span class="string">&#x27;春&#x27;</span>)；</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="6-SET类型"><a href="#6-SET类型" class="headerlink" title="6.SET类型"></a>6.SET类型</h2><ul>
+<li>设置SET类型的字段的值可以为SET类型中的0个或多个。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>建立表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> test_set (</span><br><span class="line">     gender ENUM(<span class="string">&#x27;男&#x27;</span>,<span class="string">&#x27;女&#x27;</span>), </span><br><span class="line">     res <span class="keyword">SET</span>（<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;F&#x27;</span>）   </span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> test_set <span class="keyword">values</span></span><br><span class="line">	(<span class="string">&#x27;男&#x27;</span>，<span class="string">&#x27;A&#x27;</span>),</span><br><span class="line">	(<span class="string">&#x27;女&#x27;</span>，<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/%E7%9F%A5%E8%A1%8C/" class="">
-              知行
-            </a>
-          
-            <a href="/tags/%E5%8F%8D%E6%80%9D/" class="">
-              反思
+            <a href="/tags/MySQL/" class="">
+              MySQL
             </a>
           
         </div>
@@ -739,7 +750,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2022/05/15/2022-05-15/" target="_blank" title="2022/5/15">http://example.com/2022/05/15/2022-05-15/</a>
+    <a href="/2022/05/15/mysql-shu-ju-lei-xing-zi-fu-chuan-lei-xing/" target="_blank" title="MySQL数据类型-字符串类型">http://example.com/2022/05/15/mysql-shu-ju-lei-xing-zi-fu-chuan-lei-xing/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -757,41 +768,23 @@
 
 
 
-  
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img" style="background-size: cover; 
-      background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/7.jpg" class="lazyload placeholder" data-srcset="/medias/7.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
-    </div>
-    <a href="/2022/05/15/mysql-shu-ju-lei-xing-zi-fu-chuan-lei-xing/" class="post-nav-link">
-      <div class="title">
-        <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">MySQL数据类型-字符串类型</div>
-      </div>
-      
-      <!-- <div class="content">
-        以下类型都已字符串的形式存储，故全部归结为字符串类型1.CHAR(M)
-固定长度字符串，M指定是多少就是多少。
-在底层存
-      </div> -->
-    </a>
-  </div>
-
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/10.jpg" class="lazyload placeholder" data-srcset="/medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/11.jpg" class="lazyload placeholder" data-srcset="/medias/11.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/2022/05/14/2022-05-14/" class="post-nav-link">
+    <a href="/2022/05/15/2022-05-15/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">2022/5/14</div>
+        <div class="title-text">2022/5/15</div>
       </div>
       <!-- <div class="content">
-        习惯就像一根把人栓在一定环境里的弹力绳。当你想要走出去时，弹力绳就开始产生反向拉力，将你拉回旧环境中。你走的越远，拉力越
+        我们在指定时间内需要完成很多事时有以下情况
+1.可以完美的完成一部分事，但是要以部分事完全无法顾及为代价。
+2.现有的能
       </div> -->
     </a>
   </div>
