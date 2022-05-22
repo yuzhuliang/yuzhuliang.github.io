@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-16T13:30:35.504Z</updated>
+  <updated>2022-05-22T13:17:58.299Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>指点迷津</title>
+    <link href="http://example.com/2022/05/22/2022-05-22/"/>
+    <id>http://example.com/2022/05/22/2022-05-22/</id>
+    <published>2022-05-22T12:14:59.530Z</published>
+    <updated>2022-05-22T13:17:58.299Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;焦虑、浮躁、担忧是当下最频繁和主要的三种负面情绪。一边破罐子破摔浪费大量时间行空洞事，一边又为碌碌无为原地踟蹰而后悔，循环往复，难以破局，全然忘记了亡羊补牢的道理。对今日之功毫不在意，却又对未来满怀信心。待明日成今日，心思却依旧，可明日却何其多呢！为了打破这个局面，故提出以</summary>
+        
+      
+    
+    
+    
+    <category term="沉思" scheme="http://example.com/categories/%E6%B2%89%E6%80%9D/"/>
+    
+    
+    <category term="反思" scheme="http://example.com/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+    <category term="知行" scheme="http://example.com/tags/%E7%9F%A5%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MySQL数据类型-字符串类型</title>
     <link href="http://example.com/2022/05/15/mysql-shu-ju-lei-xing-zi-fu-chuan-lei-xing/"/>
     <id>http://example.com/2022/05/15/mysql-shu-ju-lei-xing-zi-fu-chuan-lei-xing/</id>
     <published>2022-05-15T15:45:59.784Z</published>
-    <updated>2022-05-16T13:30:35.504Z</updated>
+    <updated>2022-05-21T13:50:26.013Z</updated>
     
     
       
@@ -103,7 +130,7 @@
     <link href="http://example.com/2022/05/13/2022-05-13/"/>
     <id>http://example.com/2022/05/13/2022-05-13/</id>
     <published>2022-05-13T02:08:42.809Z</published>
-    <updated>2022-05-16T13:30:24.625Z</updated>
+    <updated>2022-05-22T11:43:52.790Z</updated>
     
     
       
@@ -127,8 +154,8 @@
   
   <entry>
     <title>革心录</title>
-    <link href="http://example.com/2022/05/12/ge-xin-lu/"/>
-    <id>http://example.com/2022/05/12/ge-xin-lu/</id>
+    <link href="http://example.com/2022/05/12/ge-xin/"/>
+    <id>http://example.com/2022/05/12/ge-xin/</id>
     <published>2022-05-12T13:06:00.000Z</published>
     <updated>2022-05-16T13:30:41.545Z</updated>
     

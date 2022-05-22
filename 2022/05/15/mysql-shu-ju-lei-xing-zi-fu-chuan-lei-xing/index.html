@@ -727,7 +727,7 @@
 <li>设置为ENUM类型的字段的值只能为ENUM类型中的一个。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>建立表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> test_enum (</span><br><span class="line">	season  ENUM(<span class="string">&#x27;春&#x27;</span>,<span class="string">&#x27;夏&#x27;</span>,<span class="string">&#x27;秋&#x27;</span>,<span class="string">&#x27;冬&#x27;</span>,<span class="string">&#x27;unknown&#x27;</span>)</span><br><span class="line">);</span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>插入数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> test_enum (season) <span class="keyword">values</span> (<span class="string">&#x27;春&#x27;</span>)；</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h2 id="6-SET类型"><a href="#6-SET类型" class="headerlink" title="6.SET类型"></a>6.SET类型</h2><ul>
-<li>设置SET类型的字段的值可以为SET类型中的0个或多个。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>建立表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> test_set (</span><br><span class="line">     gender ENUM(<span class="string">&#x27;男&#x27;</span>,<span class="string">&#x27;女&#x27;</span>), </span><br><span class="line">     res <span class="keyword">SET</span>（<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;F&#x27;</span>）   </span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> test_set <span class="keyword">values</span></span><br><span class="line">	(<span class="string">&#x27;男&#x27;</span>，<span class="string">&#x27;A&#x27;</span>),</span><br><span class="line">	(<span class="string">&#x27;女&#x27;</span>，<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
+<li>设置SET类型的字段的值可以为SET类型中的0个或多个。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>建立表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> test_set (</span><br><span class="line">     gender ENUM(<span class="string">&#x27;男&#x27;</span>,<span class="string">&#x27;女&#x27;</span>), </span><br><span class="line">     res <span class="keyword">SET</span> (<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;F&#x27;</span>)   </span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> test_set <span class="keyword">values</span></span><br><span class="line">	(<span class="string">&#x27;男&#x27;</span>，<span class="string">&#x27;A&#x27;</span>),</span><br><span class="line">	(<span class="string">&#x27;女&#x27;</span>，<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>);</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       </div>
@@ -767,6 +767,24 @@
 <div class="post-nav">
 
 
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/6.jpg" class="lazyload placeholder" data-srcset="/medias/6.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+    </div>
+    <a href="/2022/05/22/2022-05-22/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">指点迷津</div>
+      </div>
+      
+      <!-- <div class="content">
+        焦虑、浮躁、担忧是当下最频繁和主要的三种负面情绪。一边破罐子破摔浪费大量时间行空洞事，一边又为碌碌无为原地踟蹰而后悔，循
+      </div> -->
+    </a>
+  </div>
 
 
 
